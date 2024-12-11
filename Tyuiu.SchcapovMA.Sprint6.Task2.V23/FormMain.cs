@@ -61,12 +61,12 @@ namespace Tyuiu.SchcapovMA.Sprint6.Task2.V23
 
         private void buttonRes_SMA_MouseLeave(object sender, EventArgs e)
         {
-            buttonRes_SMA.BackColor = Color.Green;
+            buttonRes_SMA.BackColor = Color.FromArgb(128,128,255);
         }
 
         private void buttonRes_SMA_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonRes_SMA.BackColor = Color.Blue;
+            buttonRes_SMA.BackColor = Color.Green;
         }
     }
 }

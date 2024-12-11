@@ -160,6 +160,7 @@
             textBoxEnd_SMA.BorderStyle = BorderStyle.None;
             textBoxEnd_SMA.Location = new Point(182, 39);
             textBoxEnd_SMA.Name = "textBoxEnd_SMA";
+            textBoxEnd_SMA.ReadOnly = true;
             textBoxEnd_SMA.Size = new Size(125, 20);
             textBoxEnd_SMA.TabIndex = 5;
             textBoxEnd_SMA.Text = "Конец шага:";
