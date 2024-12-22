@@ -28,7 +28,7 @@ namespace Tyuiu.SchcapovMA.Sprint6.Task5.V16.Lib
                 }
 
             }
-            numsArray = numsArray.Where(val => val >= 0).ToArray();
+            numsArray = numsArray.Where(val => val > 0).ToArray();
             return numsArray;
 
 
