@@ -9,9 +9,12 @@ namespace Tyuiu.SchcapovMA.Sprint6.Task6.V11.Test
         public void ValidCollectTextFromFile()
         {
             DataService ds = new DataService();
+            string path = "C:\\Users\\Haier\\AppData\\Local\\Temp\\InPutDataFileTask6V11.txt";
+            string res = ds.CollectTextFromFile(path);
+            string wait = "btwMCZUcB PADUsjhlu JmjQKHd TMRyztkPxzEVkcarVMlQ EUWCvEgL";
 
             string result = ds.CollectTextFromFile("C:\\Users\\Haier\\AppData\\Local\\Temp\\InPutDataFileTask6V11.txt");
-            Assert.AreEqual("btwMCZUcB PADUsjhlu JmjQKHd TMRyztkPxzEVkcarVMlQ EUWCvEgL", result);
+            Assert.AreEqual(res,wait);
         }
     }
 }
