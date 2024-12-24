@@ -124,6 +124,7 @@
             textBoxTask_SMA.ReadOnly = true;
             textBoxTask_SMA.Size = new Size(871, 47);
             textBoxTask_SMA.TabIndex = 0;
+            textBoxTask_SMA.TabStop = false;
             textBoxTask_SMA.Text = resources.GetString("textBoxTask_SMA.Text");
             // 
             // panelInPut_SMA
