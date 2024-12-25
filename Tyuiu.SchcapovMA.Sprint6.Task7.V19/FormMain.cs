@@ -92,57 +92,9 @@ namespace Tyuiu.SchcapovMA.Sprint6.Task7.V19
             }
         }
 
-        private void buttonOutPutRes_SMA_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int[,] arrayValues = new int[rows, columns];
-                arrayValues = ds.GetMatrix(openFilePath);
-                for (int r = 0; r < rows; r++)
-                {
-                    for (int c = 0; c < columns; c++)
-                    {
-                        dataGridViewOutPut_SMA.Rows[r].Cells[c].Value = arrayValues[r, c];
-                    }
-                }
-                buttonSaveFile_SMA.Enabled = true;
-            }
-            catch
-            {
-                MessageBox.Show("Файл не содержит матрицу", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+       
 
-        private void buttonOpenFile_SMA_Click(object sender, EventArgs e)
-        {
-            openFileDialog_SMA.ShowDialog();
-            openFilePath = openFileDialog_SMA.FileName;
-
-            int[,] arrayValues = new int[rows, columns];
-
-            arrayValues = LoadFromFileData(openFilePath);
-
-            dataGridViewInPut_SMA.ColumnCount = columns;
-            dataGridViewInPut_SMA.RowCount = rows;
-            dataGridViewOutPut_SMA.ColumnCount = columns;
-            dataGridViewOutPut_SMA.RowCount = rows;
-
-            for (int i = 0; i < columns; i++)
-            {
-                dataGridViewInPut_SMA.Columns[i].Width = 25;
-                dataGridViewOutPut_SMA.Columns[i].Width = 25;
-            }
-            for (int r = 0; r < rows; r++)
-            {
-                for (int c = 0; c < columns; c++)
-                {
-                    dataGridViewInPut_SMA.Rows[r].Cells[c].Value = arrayValues[r, c];
-                }
-            }
-            arrayValues = ds.GetMatrix(openFilePath);
-            buttonOutPutRes_SMA.Enabled = true;
-
-        }
+        
 
         private void buttonOpenFile_SMA_Click_1(object sender, EventArgs e)
         {
