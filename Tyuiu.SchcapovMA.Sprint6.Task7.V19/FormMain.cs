@@ -60,6 +60,7 @@ namespace Tyuiu.SchcapovMA.Sprint6.Task7.V19
             saveFileDialog_SMA.FileName = "OutPutFileTask7V19.csv";
             saveFileDialog_SMA.InitialDirectory = Directory.GetCurrentDirectory();
             saveFileDialog_SMA.ShowDialog();
+            
 
             string path = saveFileDialog_SMA.FileName;
 
