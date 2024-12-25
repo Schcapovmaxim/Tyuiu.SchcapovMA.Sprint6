@@ -22,7 +22,16 @@ namespace Tyuiu.SchcapovMA.Sprint6.Task7.V19.Test
                                     {- 8, 16, -13, -17, 10, 12, -14, 5, 2, -12},
                                     {1, -19, 6, -8, 1, 11, 1, -20, 10, 6},
                                    };
-            
+            if (file.Exists)
+            {
+
+                dataService.GetMatrix(path);
+                CollectionAssert.AreEqual(dataService.GetMatrix(path), res);
+            }
+            else
+            {
+                Assert.Fail();
+            }
         }
     }
 }
